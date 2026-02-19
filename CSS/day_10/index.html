@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .animation {
+        width: 200px;
+        height: 200px;
+        border: 2px solid white;
+        margin: 200px;
+        animation: rotate-animation 4s linear infinite;
+        color: white;
+      }
+      @keyframes rotate-animation {
+        from {
+          rotate: 0deg;
+          background-color: blue;
+        }
+        to {
+          rotate: 360deg;
+          background-color: red;
+        }
+      }
+
+      #loader {
+        width: 20px;
+        height: 20px;
+        animation: loader-animation 4s linear infinite;
+      }
+
+      @keyframes loader-animation {
+        from {
+          rotate: 0deg;
+        }
+        to {
+          rotate: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fa-solid fa-spinner" id="loader"></i>
+    <div class="animation">I am div</div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    height: 80px;
+}
+
+header a img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    gap: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+@media(width <=640px) {
+    header nav a {
+        display: none;
+    }
+}

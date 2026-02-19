@@ -1,0 +1,14 @@
+p{
+    color: red;
+}
+
+p, h1{
+    color: blue;
+    background-color: black;
+}
+#id1{
+    color: aqua;
+}
+.para-1.para-2{
+    color: green;   
+}

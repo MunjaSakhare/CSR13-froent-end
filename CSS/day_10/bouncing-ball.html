@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .bauncing-ball {
+        width: 200px;
+        height: 200px;
+        margin: 100px;
+        background-color: yellowgreen;
+        animation: bauncing-animation 1s ease-in-out infinite alternate;
+      }
+      @keyframes bauncing-animation {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bauncing-ball"></div>
+  </body>
+</html>
